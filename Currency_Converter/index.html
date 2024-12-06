@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Converter</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="top">
+            <header>
+                <div id="logo">
+                    XE Clone
+                </div>
+                <nav>
+                    <ul class="navLinks">
+                        <li><a href="#">Send Money</a></li>
+                        <li><a href="#">Converter</a></li>
+                        <li><a href="#">Curreny API</a></li>
+                        <li><a href="#">Tools</a></li>
+                    </ul>
+                </nav>
+                <a id="register" href="#"><button>Register</button></a>
+            </header>
+    
+            <h1>Currency Converter</h1>
+        </div>
+        
+        <div class="form-container">
+            <div id="form-items">
+                <div id="amount-box">
+                    <label>Amount</label>
+                    <input id="amount" type="number" min="0">
+                </div>
+                <div id="selections">
+                    <div id="select-one">
+                        <label>From</label>
+                        <select id="first-currency">
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="AUD">AUD - Australian Dollar</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                        </select>
+                    </div>
+                    <div id="swap-button">
+                        <button id="swap" onclick="swap()">Swap</button>
+                    </div>
+                    <div id="select-two">
+                        <label>To</label>
+                        <select id="second-currency">
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="AUD">AUD - Australian Dollar</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="bottom">
+                <div id="results-container">
+                    <div id="results">
+                        <div id="from-amount"></div>
+                        <div id="to-amount"></div>
+                        <div id="conversion"></div>
+                    </div>
+                </div>
+                <div id="convert-button">
+                    <button id="convert" onclick="convert()">Convert</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!--To later be used for common conversion chart-->
+        <div id="charts">
+            <div id="chart-one">
+                <h2></h2>
+                <div id="from-currency">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="to-currency">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="chart-two">
+                <h2></h2>
+                <div id="from-currency">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="to-currency">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    
+
+</html>

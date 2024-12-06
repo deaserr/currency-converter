@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks a:hover{
+    text-decoration: underline;
+}
+
+#register button{
+    background-color: rgb(56, 131, 211);
+    min-width: 5.4em;
+    min-height: 2.3em;
+    border-color: transparent;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+li, a, button, h1{
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    margin-top: 1.2em;
+}
+
+.form-container{
+    min-height: 13em;
+    max-width: 45em;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 1em;
+    box-shadow: 5px 5px 20px rgba(21, 21, 21, 0.28);
+    display: flex;
+    flex-direction: column;
+    column-gap: 1.5em;
+    row-gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+label{
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(79, 79, 79);
+    text-decoration: none;
+}
+
+input, select{
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(79, 79, 79);
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 4%;
+}
+
+body{
+    background-image: linear-gradient(rgb(23, 23, 106), rgb(33, 54, 161));
+    background-repeat: no-repeat;
+    height: 20rem;
+}
+
+#form-items{
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: 33% 1fr;
+    grid-template-rows: none;
+    column-gap: 1.75em;
+    row-gap: 1.75em;
+    min-width: 41.2em;
+}
+
+#amount-box{
+    display: flex;
+    flex-direction: column;
+}
+
+#amount{
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: rgb(227, 227, 227);
+    min-height: 3em;
+}
+
+#selections{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+select{
+    display: flex;
+    padding: 6px;
+}
+
+#swap-button{
+    align-self:  center;
+    padding-top: 1em;
+}
+
+#swap{
+    display: flex;
+    color: rgb(79, 79, 79);
+    align-self:  center;
+    padding: 0.7em;
+    border: 1px solid rgb(227, 227, 227);
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#select-one, #select-two{
+    display: flex;
+    flex-direction: column;
+    min-width: 8em;
+}
+
+#first-currency, #second-currency{
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: rgb(227, 227, 227);
+    min-height: 3em;
+    cursor: pointer;
+}
+
+#bottom{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: none;
+    min-width: 41.2em;
+}
+
+#convert{
+    cursor: pointer;
+    background-color: rgb(56, 131, 211);
+    color: rgb(255, 255, 255);
+    font-weight: 350;
+    font-size: 0.9em;
+    padding: 0.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none;
+    border-radius: 0.5em;
+    justify-self: right;
+}
+
+#convert-button{
+    padding: 1em;
+    justify-self: right;
+    align-self: center;
+}
+
+#results{
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(79, 79, 79);
+    text-decoration: none;
+}
+
+#results-container{
+    padding: 1em;
+}
+
+#from-amount{
+    font-size: 1.4em;
+}
+
+#to-amount{
+    font-size: 2em;
+}
+
+#charts, li{
+    color: black;
+}
